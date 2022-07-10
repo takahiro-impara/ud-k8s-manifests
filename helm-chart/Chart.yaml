@@ -1,0 +1,10 @@
+## The chart API version
+apiVersion: v1
+
+name: nginx-deployment
+description: Install nginx-deployment
+keywords:
+- nginx
+version: 1.0.0
+maintainers:
+- name: impara8
