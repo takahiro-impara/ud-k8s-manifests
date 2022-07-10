@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx
-    tag: alpine
-  name: nginx-alpine
+    app: {{ .Values.image.repository }}
+    tag: {{ .Values.image.tag }}
+  name: {{ .Values.image.repository }}-{{ .Values.image.tag }}
   namespace: {{ .Values.namespace.name }}
 spec:
   replicas: {{ .Values.replicaCount }}
